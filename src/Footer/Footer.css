@@ -1,0 +1,37 @@
+.footer-pin {
+    bottom:0;
+    width:100%;
+    height:100px;
+    text-align:center;
+}
+
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+}
+
+a.social:hover {
+    transform: translateY(-2px);
+}
+
+a.youtube {
+    color: #eb3223;
+}
+  
+a.facebook {
+    color: #4968ad;
+}
+  
+a.github {
+    color: black;
+}
+  
+a.instagram {
+    color: black;
+}
+
+.footer-pin h6 {
+    margin-top:20px;
+    color: rgb(60, 60, 60);
+}
