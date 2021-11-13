@@ -24,7 +24,6 @@ const PortfolioContainer = () => {
         <div className="portfolio">
             Products I worked on:
             <PortfolioList portfolios={portfolios}/>
-             {/* {portfolio.map(portfolio => <div>{portfolio.title}</div>)}  */}
         </div>
     )
 

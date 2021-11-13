@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react"
 import Intro from './Intro';
 import PortfolioContainer from './PortfolioContainer';
 import NavBar from '../Header/NavBar';
-import Contact from '../ContactPage/Contact';
 import Footer from '../Footer/Footer';
+import AboutContainer from '../AboutPage/AboutContainer';
 import { Route, Switch } from 'react-router-dom';
 import './HomePage.css'
 
@@ -18,8 +18,8 @@ const HomeContainer = () => {
             <PortfolioContainer />
           </div>
         </Route>
-        <Route path="/contact">
-          <Contact />
+        <Route path="/about">
+          <AboutContainer />
         </Route>
       </Switch>
       <Footer />

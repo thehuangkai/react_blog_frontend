@@ -2,26 +2,32 @@ import React, { useState, useEffect } from "react"
 import reactDom from "react-dom"
 
 const PortfolioItem = props => {
-    const [editing, setEditing] = useState(false)
 
-    const { id, title, intro, preview_image } = props.portfolio
+    const { title, intro, preview_image } = props.portfolio
 
     const liStyle = {
         display: "inline-block",
-        width:"50%",
-        float:"left"
+        width:"30%",
+        float:"left",
+        marginRight:"3vw"
     }
 
     const titleStyle = {
-        marginTop: 30
+        marginTop: "2vw"
     }
 
     const introStyle = {
-        fontSize: 18,
-        fontFamily: "sans-serif",
+        fontSize: 16,
+        fontFamily: "Raleway",
         color: "#212121"+66,
-        textTransform: "none"
+        textTransform: "none",
+        textAlign:"left",
+        lineHeight: "150%"
+        
+    }
 
+    const imgStyle = {
+        width: "100%",
     }
 
     // use RETURN function for unmount only
@@ -32,7 +38,7 @@ const PortfolioItem = props => {
 
     return (
         <li style={liStyle}>
-            <img src={preview_image} width="200" height="200" />
+            <img src={preview_image} style={imgStyle} />
             <br />
             <div style={titleStyle}>{title}</div>
             <br />

@@ -20,11 +20,6 @@ const NavBar = () => {
             path: "/about",
             text: "About",
         },
-        {
-            id: 4,
-            path: "/contact",
-            text: "Contact",
-        },
     ]
 
     return (
