@@ -17,6 +17,7 @@ const PortfolioContainer = () => {
                 }
             };
             fetchData();
+            window.scrollTo(0, 0)
         } 
       }, [])
 

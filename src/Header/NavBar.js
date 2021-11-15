@@ -12,14 +12,9 @@ const NavBar = () => {
         },
         {
             id: 2,
-            path: "/resume",
-            text: "Resume",
-        },
-        {
-            id: 3,
             path: "/about",
             text: "About",
-        },
+        }
     ]
 
     return (

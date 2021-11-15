@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react"
-import reactDom from "react-dom"
+import { 
+    Link,
+    useHistory 
+} from "react-router-dom";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const PortfolioItem = props => {
 
-    const { title, intro, preview_image } = props.portfolio
+    const { title, intro, preview_image, slug } = props.portfolio
+    let history = useHistory();
 
     const liStyle = {
         display: "inline-block",
@@ -23,7 +29,6 @@ const PortfolioItem = props => {
         textTransform: "none",
         textAlign:"left",
         lineHeight: "150%"
-        
     }
 
     const imgStyle = {
@@ -36,13 +41,22 @@ const PortfolioItem = props => {
         }
     }, [])
 
+    const goDetails = () => {
+        history.push("/"+slug);
+    }
+
     return (
         <li style={liStyle}>
             <img src={preview_image} style={imgStyle} />
             <br />
-            <div style={titleStyle}>{title}</div>
+            <div style={titleStyle}>{title || <Skeleton count={10}/>}</div>
             <br />
-            <div style={introStyle}>{intro}</div>
+            <div style={introStyle}>{intro || <Skeleton count={10}/>}</div>
+            <div className="left">
+            <div onClick={goDetails} className="button-style">
+                Details
+            </div>            
+            </div>
         </li>
     )
 }

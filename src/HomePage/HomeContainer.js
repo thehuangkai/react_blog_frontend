@@ -4,6 +4,8 @@ import PortfolioContainer from './PortfolioContainer';
 import NavBar from '../Header/NavBar';
 import Footer from '../Footer/Footer';
 import AboutContainer from '../AboutPage/AboutContainer';
+import DetailsContainer from '../DetailsPage/DetailsContainer';
+import ErrorContainer from '../ErrorPage/ErrorContainer';
 import { Route, Switch } from 'react-router-dom';
 import './HomePage.css'
 
@@ -21,9 +23,14 @@ const HomeContainer = () => {
         <Route path="/about">
           <AboutContainer />
         </Route>
+        <Route path="/404">
+          <ErrorContainer />
+        </Route>
+        <Route path="/:portfolioTitle">
+          <DetailsContainer />
+        </Route>
       </Switch>
       <Footer />
-
     </>
   )
 }
