@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import Intro from './Intro';
-import PortfolioContainer from './PortfolioContainer';
+import BioContainer from './BioContainer';
+import SkillsContainer from './SkillsContainer';
 import NavBar from '../Header/NavBar';
 import Footer from '../Footer/Footer';
 import AboutContainer from '../AboutPage/AboutContainer';
@@ -17,7 +18,8 @@ const HomeContainer = () => {
         <Route exact path="/">
           <div className = "body" >
             <Intro />
-            <PortfolioContainer />
+            <BioContainer />
+            <SkillsContainer />
           </div>
         </Route>
         <Route path="/about">

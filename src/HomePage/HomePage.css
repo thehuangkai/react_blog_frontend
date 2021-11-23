@@ -2,8 +2,7 @@
     text-align:center;
     padding-top:5vw;
     padding-bottom:10vw;
-    padding-left:10vw;
-    padding-right:10vw;
+    font-family: Raleway;
   }
 
 .intro {
@@ -13,16 +12,75 @@
     font-weight: 600;
     font-size: 16px;
     text-align:center;
-    height:40vh;
     padding-left:15vw;
     padding-right:15vw;
+    padding-bottom:3vw;
     font-size:26px;
+}
+
+.about {
+  background-color: #3867cc;
+  color:white;
+  padding-top: 8vw;
+  padding-bottom: 5vw;
+  padding-left: 10vw;
+  padding-right:10vw;
+}
+
+.title {
+  font-weight:700;
+  font-size: 28px;
+  padding-bottom:5vw;
+}
+
+.about-content {
+  font-weight:600;
+  font-size: 18px;
+  padding-left:10vw;
+  padding-right:10vw;
+  padding-bottom:3vw;
+}
+
+.project-button {
+  background-color: rgb(60, 60, 60);
+  font-size:16;
+  color: white;
+  padding: 12px 3vw;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-weight:600;
+  margin: 20px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.project-button:hover {
+  background-color: white; 
+  color: black; 
+  border: none;
+  border-radius: 5px;
+}
+
+/* Skills CSS */
+.skills {
+  color:black;
+  padding-top: 8vw;
+  padding-bottom: 5vw;
+  padding-left: 10vw;
+  padding-right:10vw;
+}
+
+.skill-icon{
+  width:12.5%;
+  padding-right:5vw;
 }
 
 .profilepic
 {
   border-radius: 50%;
-  width: 150px;
+  width: 250px;
   margin: 20px;
 }
 
@@ -55,10 +113,8 @@
   margin: 20px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  text-transform: none;
   border-radius: 5px;
   border: 3px solid black;
-  border-radius: 5px;
 }
 
 .button-style:hover {
