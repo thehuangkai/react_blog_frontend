@@ -23,7 +23,7 @@ const PortfolioContainer = () => {
 
     return(
         <div className="portfolio">
-            Products I worked on:
+            <div className="portofolio-page-title">Products I worked on:</div>
             <PortfolioList portfolios={portfolios}/>
         </div>
     )

@@ -1,7 +1,7 @@
 .body {
     text-align:center;
     padding-top:5vw;
-    padding-bottom:10vw;
+    padding-bottom:5vw;
     font-family: Raleway;
   }
 
@@ -66,15 +66,63 @@
 /* Skills CSS */
 .skills {
   color:black;
-  padding-top: 8vw;
-  padding-bottom: 5vw;
-  padding-left: 10vw;
-  padding-right:10vw;
+  padding-top:8vw;
+  padding-bottom:5vw;
+  padding-left:2vw;
+  padding-right:2vw;
+}
+
+.skills-column{
+  float: left;
+  width: 20%;
+  padding-bottom:2vw;
 }
 
 .skill-icon{
-  width:12.5%;
-  padding-right:5vw;
+  width:5vw;
+  object-fit: fill;
+  padding-bottom:1vw;
+}
+
+.skill-name {
+  font-weight:700;
+  font-family: Raleway;
+  font-size:21px;
+}
+
+.skills-row {
+  padding-bottom:2vw;
+}
+
+/* Clear floats after the columns */
+.skills-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project-button2 {
+  background-color: white;
+  font-size:16;
+  color: black;
+  padding: 12px 3vw;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-weight:600;
+  margin: 20px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.project-button2:hover {
+  background-color: black; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  border: 3px solid black;
 }
 
 .profilepic
@@ -86,19 +134,55 @@
 
 .portfolio {
     margin-top:8vw;
-    font-family: Mohave;
+    font-family: Raleway;
     font-weight: 900;
     font-style: bold;
     font-size: 24px;
     letter-spacing: .075em;
     line-height: 1.4em;
-    text-transform: uppercase;
 }
 
-.portfolio-list{
+.portfolio-row{
     margin-top:5vw;
     padding-left:10vw;
     padding-right:10vw;
+    text-align:center;
+    background-color:#3867cc;
+}
+
+.portfolio-row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.portfolio-column{
+  float: left;
+  width: 50%;
+  padding-bottom:2vw;
+  text-align:center;
+}
+
+.portfolio-item{
+  padding-left:5%;
+  padding-right:5%;
+  text-align:center;
+}
+
+.portofolio-page-title{
+  font-family:Raleway;
+  text-align:center;
+  font-weight:700;
+}
+
+.portfolio-image{
+  width:100%
+}
+
+.portfolio-writeup{
+  background-color:white;
+  padding-left:10%;
+  padding-right:10%;
 }
 
 .button-style{

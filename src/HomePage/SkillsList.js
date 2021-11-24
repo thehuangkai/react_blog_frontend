@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
+import SkillsItem from "./SkillsItem"
 
-
-const SkillsList = props => {
+const SkillsList = () => {
 
     function importAll(r) {
         let images = {};
@@ -9,20 +9,11 @@ const SkillsList = props => {
         return images;
     }
 
-    const images = importAll(require.context('../Assets/skills', false, /\.(png|jpe?g|svg)$/));
-
+    const images = importAll(require.context('../Assets/Skills', false, /\.(png|jpe?g|svg)$/));
 
     return (
-        <div className="skills">
-            <h1>Frontend</h1>
-
-
-            {Object.keys(images).map((keyName, i) => (
-                
-                <img className="skill-icon" key={i} src={images[keyName].default} />
-            ))}
-
-            
+        <div className="skills-row">
+            <SkillsItem images ={images}/>
         </div>
     )
 

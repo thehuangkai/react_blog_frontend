@@ -9,14 +9,14 @@ const SkillsContainer = () => {
     let history = useHistory();
 
     const goProjects = () => {
-        history.push("/projects");
+        history.push("/portfolio");
     }
 
     return (
         <div className="skills">
             <div className="title">Skills</div>
-            <SkillsList skills={'skills'}/>
-            <div onClick={goProjects} className="project-button">See my projects</div>
+            <SkillsList/>
+            <div onClick={goProjects} className="project-button2">See my projects</div>
         </div>
     )
 

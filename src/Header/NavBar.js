@@ -12,6 +12,11 @@ const NavBar = () => {
         },
         {
             id: 2,
+            path: "/portfolio",
+            text: "Portfolio",
+        },
+        {
+            id: 3,
             path: "/about",
             text: "About",
         }
