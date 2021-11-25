@@ -21,7 +21,8 @@ const PortfolioItem = props => {
     let introStyle = {
         paddingTop: 10,
         paddingBottom: 10,
-        fontSize: 14
+        fontSize: 14,
+        color:"#7E7E7E"
     }
 
     // use RETURN function for unmount only
@@ -41,13 +42,13 @@ const PortfolioItem = props => {
                 <img className="portfolio-image" src={images} />
                 <div className="portfolio-writeup">
                     <div style={titleStyle}>
-                        {title}
+                        {title|| <Skeleton count={3}/>}
                     </div>
                     <div style={introStyle}>
-                        {intro}
+                        {intro|| <Skeleton count={10}/>}
                     </div>
-                    <div>
-                        {tech_stack}
+                    <div style={introStyle}>
+                        Tech/Tools used: {tech_stack|| <Skeleton count={3}/>}
                     </div>
                 </div>
             </div>

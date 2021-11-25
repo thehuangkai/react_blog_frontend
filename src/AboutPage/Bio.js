@@ -13,8 +13,8 @@ const Bio = () => {
         After that, I spend my time mostly building apps for other startups. <br/><br/>
         I came to the conclusion that a successful app needs 2 factors: <br /><br/>
         <div style={{fontWeight:600}}>Great Engineering and Great Product Execution. </div> <br/>
-        Nowadays, great engineering is more achievable than great product management, marketing and growth, which are much less predictable. <br/><br/>
-        Staying true to my goal and my roots as a software engineer, I specialise in product management and software to build truly great products.
+        As someone who enjoys learning a wide range of topics and understanding the big picture, I often dabble in both engineering and product management to build truly great products. <br/><br/>
+        Staying true to my goal and my roots as a software engineer, I hope to build great engnineered products to solve real problems.
       </div>
 
     </div>

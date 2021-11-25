@@ -8,7 +8,7 @@ const BioContainer = () => {
     let history = useHistory();
 
     const goProjects = () => {
-        history.push("/projects");
+        history.push("/portfolio");
     }
 
     return (

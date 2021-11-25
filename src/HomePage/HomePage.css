@@ -138,8 +138,7 @@
     font-weight: 900;
     font-style: bold;
     font-size: 24px;
-    letter-spacing: .075em;
-    line-height: 1.4em;
+    line-height: 1em;
 }
 
 .portfolio-row{
@@ -147,7 +146,7 @@
     padding-left:10vw;
     padding-right:10vw;
     text-align:center;
-    background-color:#3867cc;
+    height:100vh;
 }
 
 .portfolio-row:after{
@@ -181,8 +180,6 @@
 
 .portfolio-writeup{
   background-color:white;
-  padding-left:10%;
-  padding-right:10%;
 }
 
 .button-style{
