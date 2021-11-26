@@ -36,33 +36,33 @@ const DetailsContainer = props => {
   return (
     <div className="body">
       <img src={Detail.images} className="main-img" />
-      <div style={{ fontSize: 14, fontWeight: 600 }}>{Detail.title}</div>
+      <div className="details-title">{Detail.title}</div>
 
       <div className="sections">
 
-      <div style={{marginTop:"5vh"}}>
-          <div style={{ fontSize: 20, fontWeight: 600 }}> 
+      <div className="content">
+          <div className="content-title"> 
             Intro
           </div>
           {Detail.intro || <Skeleton count={5}/>}
         </div>
 
-        <div style={{marginTop:"5vh"}}>
-          <div style={{ fontSize: 20, fontWeight: 600 }}> 
+        <div className="content">
+          <div className="content-title"> 
             Role 
           </div>
           {Detail.role || <Skeleton count={5}/>}
         </div>
 
-        <div style={{marginTop:"5vh"}}>
-          <div style={{ fontSize: 20, fontWeight: 600 }}> 
+        <div className="content">
+          <div className="content-title"> 
             Results 
           </div>
           {Detail.results || <Skeleton count={5}/>}
         </div>
 
-        <div style={{marginTop:"5vh"}}>
-          <div style={{ fontSize: 20, fontWeight: 600 }}> 
+        <div className="content">
+          <div className="content-title"> 
             Tech Stack 
           </div>
           {Detail.tech_stack || <Skeleton count={5}/>}

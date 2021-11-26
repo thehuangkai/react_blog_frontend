@@ -8,22 +8,8 @@ import 'react-loading-skeleton/dist/skeleton.css'
 
 const PortfolioItem = props => {
 
-    const { title, intro, preview_image, slug, tech_stack, images } = props.portfolio
+    const { title, intro, slug, tech_stack, images } = props.portfolio
     let history = useHistory();
-
-    let titleStyle = {
-        paddingTop: 10,
-        paddingBottom: 10,
-        fontSize: 21,
-        textTransformation: "None"
-    }
-
-    let introStyle = {
-        paddingTop: 10,
-        paddingBottom: 10,
-        fontSize: 14,
-        color:"#7E7E7E"
-    }
 
     // use RETURN function for unmount only
     useEffect(() => {
@@ -41,13 +27,13 @@ const PortfolioItem = props => {
             <div className="portfolio-item">
                 <img className="portfolio-image" src={images} />
                 <div className="portfolio-writeup">
-                    <div style={titleStyle}>
+                    <div className="portfolio-title">
                         {title|| <Skeleton count={3}/>}
                     </div>
-                    <div style={introStyle}>
+                    <div className="portfolio-intro">
                         {intro|| <Skeleton count={10}/>}
                     </div>
-                    <div style={introStyle}>
+                    <div className="portfolio-intro">
                         Tech/Tools used: {tech_stack|| <Skeleton count={3}/>}
                     </div>
                 </div>

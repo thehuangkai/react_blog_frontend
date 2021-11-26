@@ -7,9 +7,9 @@ const Intro = () => {
     return (
         <div className="intro">
             <img src={profilepic} alt="ProfilePic" className="profilepic"></img>
-            <div style={{fontSize:20, fontWeight:600}}>Hey there,</div>
-            <div style={{fontSize:32, fontWeight:600}}> I'm Huang Kai</div>
-            <ReactTypingEffect style={{fontSize:20, fontWeight:700}} text={['Product Manager','Full Stack Developer', 'Problem Solver']} speed={50} eraseDelay={500} />
+            <div className="intro-header">Hey there,</div>
+            <div className="intro-name"> I'm Huang Kai</div>
+            <ReactTypingEffect className="intro-typewriter" text={['Product Manager','Full Stack Developer', 'Problem Solver']} speed={50} eraseDelay={500} />
         </div>
     )
 

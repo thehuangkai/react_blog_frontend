@@ -1,5 +1,6 @@
 import React from "react"
 import SkillsItem from "./SkillsItem"
+import { Row } from 'react-bootstrap'
 
 const SkillsList = () => {
 
@@ -12,9 +13,9 @@ const SkillsList = () => {
     const images = importAll(require.context('../Assets/Skills', false, /\.(png|jpe?g|svg)$/));
 
     return (
-        <div className="skills-row">
+        <Row>
             <SkillsItem images ={images}/>
-        </div>
+        </Row>
     )
 
 }

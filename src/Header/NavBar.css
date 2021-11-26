@@ -14,7 +14,6 @@
     line-height: 1.2em;
     letter-spacing: .05em;
     text-transform: uppercase;
-
   }
 
 .left a {
@@ -24,10 +23,6 @@
 
 .left a:hover {
     color: rgb(60, 60, 60);
-}
-
-.right {
-
 }
 
 ul{
@@ -52,7 +47,6 @@ ul li a{
 ul li a:hover{
     color:black;
     border-radius: 2px;
-    font-size: 14px;
 }
     
 ul li a:active{
@@ -61,4 +55,31 @@ ul li a:active{
 
 .active-link {
     color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    margin-left:40px;
   }
+
+  .left{
+    font-size: 20px;
+  }
+
+  ul{
+    margin-bottom:10px;
+  }
+
+  ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    padding:0px 20px;
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: .04em;
+    text-transform: none;
+    line-height: 1em;
+  }
+}
