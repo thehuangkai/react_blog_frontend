@@ -26,7 +26,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
         
-            <h6>2021. All rights reserved. Made from tinkering with AWS, Django and Reactjs.</h6>
+            <h6>2022. All rights reserved. Made from tinkering with AWS, Django and Reactjs.</h6>
         </footer>
     )
 }

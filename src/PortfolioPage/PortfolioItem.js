@@ -31,8 +31,9 @@ const PortfolioItem = props => {
                         {title|| <Skeleton count={3}/>}
                     </div>
                     <div className="portfolio-intro">
-                        {intro|| <Skeleton count={10}/>}
+                        {intro.substring(0, 220) + '...'|| <Skeleton count={10}/>}
                     </div>
+                    <br/>
                     <div className="portfolio-intro">
                         Tech/Tools used: {tech_stack|| <Skeleton count={3}/>}
                     </div>
